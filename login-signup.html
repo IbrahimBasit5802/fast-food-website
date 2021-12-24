@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login and Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="login-signup.css">
+</head>
+<body>
+	<!-- Login signup slider buttons -->
+	<div class="form">
+		<div class = "box">
+			<div id = "button"></div>
+			<button type="button" class = "login_signup" onclick="log()">Log In</button>
+			<button type="button" class = "login_signup" onclick="signUp()">Sign Up</button>
+		</div>
+		<!-- Login Form -->
+		<form class = "inputs" id = "log-in" action="home-page.html">
+			<input type="text" class="input-field" placeholder="Username" required>
+			<input type="password" class="input-field" placeholder="Password" required>
+			<input type="checkbox" class="check_box"> <span>Remember Password</span>
+			<button href="home-page.html" type="submit" class="clicked">
+			Log In</button>
+		</form>
+		<!-- Sign Up Form -->
+		<form class = "inputs" id = "sign-up" action="home-page.html">
+			<input type="text" class="input-field" placeholder="Full Name" required>
+			<input type="text" class="input-field" placeholder="Username" required>
+			<input type="email" class="input-field" placeholder="Email Address" required>
+			<input type="password" class="input-field" placeholder="Password" required>
+			<input type="password" class="input-field" placeholder="Confirm Password" required>
+			<input type="checkbox" class="check_box"> <span>I agree to the Terms & Conditions</span>
+			<button type="submit" class="clicked">
+			Sign Up</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		var first = document.getElementById("log-in");
+		var second = document.getElementById("sign-up");
+		var third = document.getElementById("button");
+
+		function signUp() {
+				first.style.left = "-400px";
+				second.style.left = "50px";
+				third.style.left = "110px";
+		}
+		function log() {
+				first.style.left = "50px";
+				second.style.left = "450px";
+				third.style.left = "0px";
+		}
+	</script>
+</body>
+</html>

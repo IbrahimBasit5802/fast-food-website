@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout</title>
+  <link rel="stylesheet" type="text/css" href="checkout.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container col-8 br-2 rounded">
+    <div class="row g-3">
+      <div class="col-8">
+
+        <h4>Shipping Details</h4 >
+        <form action="home-page.html">
+          <div class="row">
+            <!-- Name -->
+            <div class="col-6">
+              <label class="form-label" for="firstname">First Name</label>
+              <input type="text" id="first-name" class="form-control" required>
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="lastname">Last Name</label>
+              <input type="text" id="last-name" class="form-control" required>
+            </div>
+            <!-- Email -->
+            <div class="col-12">
+              <label class="form-label" for="email">Email</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+            </div>
+            <!-- Contact Number -->
+            <div class="col-12">
+              <label class="form-label">Contact Number</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="phone" required>
+              </div>
+            </div>
+            <!-- Address -->
+            <div class="col-12">
+              <label class="form-label">Shipping Address</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="address" required>
+              </div>
+            </div>
+            <!-- Country Choice -->
+            <div class="col-3">
+              <label class="form-label" for="country">Country</label>
+              <select class="form-control" id="country">
+                <option>Choose</option>
+                <option>Pakistan</option>
+                <option>United States</option>
+              </select>
+            </div>
+            <!-- Province Choice -->
+            <div class="col-3">
+              <label class="form-label" for="state">Province</label>
+              <select class="form-control" id="province">
+                <option>Choose</option>
+                <option>Punjab</option>
+                <option>New York</option>
+              </select>
+            </div>
+            <!-- Zip Code -->
+            <div class="col-3">
+              <label class="form-label" for="zip">Zip Code</label>
+              <input type="text" class="form-control" id="zip">
+            </div>
+          </div>
+          <!-- Payment Section Start -->
+          <hr>
+            <h4>Payment Method</h4>
+            <div class="form-check">
+              <input type="radio" class="form-check-input check" >
+              <label class="form-check-label">Credit Card</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input check">
+              <label class="form-check-label">Debit Card</label>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label class="form-label" for="cardname">Name on Card</label>
+                <input type="text" class="form-control" id="name-on-card" required>
+                <small class="text-muted">Full name as is shown on your card.</small>
+              </div>
+              <div class="col-6">
+                <label class="form-label" for="cardnumber">Card Number</label>
+                <input type="text" class="form-control" id="cardnum" required>
+              </div>
+              <div class="col-3">
+                <label class="form-label" for="expiry">Expiration Date</label>
+                <input type="text" class="form-control" id="expiry" required>
+              </div>
+              <div class="col-3">
+                <label class="form-label" for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+              </div>
+             
+            </div>
+          </div>
+          <!-- Payment Section End -->
+          <div class="col-8">
+            <hr>
+          </div>
+          
+          <div class="col-8">
+          
+              <button type="submit" class="btn btn-primary btn-block mb-3" id="submit-btn">
+              Place an Order</button> 
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

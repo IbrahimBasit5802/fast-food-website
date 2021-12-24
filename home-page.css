@@ -1,0 +1,185 @@
+
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css";
+
+* {
+	font-family: cursive;
+	margin: 0px;
+	padding: 0px;
+
+}
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-items-center {
+	align-items: center;
+}
+#home-image {
+	padding-left: 27%;
+}
+
+#logo {
+	padding-right: 10px;
+}
+
+.home-section::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 70%;
+	width: 100%;
+	background-color: #000000;
+	opacity: 0.3;
+	z-index: -1;
+	
+}
+.home-section .home-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 70%;
+	width: 100%;
+	background-color: orange;
+	z-index: -2;
+	background-attachment: fixed;
+	background-image: url('home-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.min-vh-100 {
+	min-height: 100vh;
+}
+
+.home-section .min-vh-100 {
+	padding: 100px 0;
+}
+
+.home-text {
+	padding: 0 15px;
+	max-width: 700px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 12%;
+	margin-left: 18%;
+	color: #fff;
+}
+
+
+
+.home-text h1 {
+	font-size: 60px;
+	line-height: 75px;
+	margin: 0 0 5px;
+	
+}
+
+
+.home-text p {
+	margin:  0 0 30px;
+	font-size: 20px;
+}
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 600;
+
+}
+
+.pad {
+	padding: 80px 0;
+}
+
+.about-section {
+	margin: auto;
+	background-color: #E3963E;
+	margin-top: 28%;
+
+}
+
+.title {
+	text-align: center;
+	padding: 0 15px;
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+.title h2{
+	font-size: 35px;
+	text-transform: capitalize;
+}
+
+.title h2:before {
+	content: attr(data-title);
+	display: block;
+	font-size: 24px;
+	color: white;
+	text-transform: capitalize;
+}
+
+.about-stuff {
+	width: 50%;
+	padding: 0 15px;
+}
+
+.about_image {
+	width: 150px;
+	padding: 0 15px;
+	background-size: contain;
+}
+
+.about_image img {
+	border-radius: 10px;
+}
+
+.about_image .box {
+	position: relative;
+}
+
+.footer {
+	padding: 15px 0;
+	background-color: #C04000;
+	position: relative;
+}
+
+.footer-content {
+	width: calc(100% / 3);
+	padding: 0 15px;
+	text-align: center;
+}
+
+.footer-content h3 {
+	text-transform: capitalize;
+	font-size: 22px;
+	margin: 0 0 15px;
+}
+
+.footer-content p {
+	line-height: 30px;
+}
+
+.footer-content .social-links a{
+	display: inline-flex;
+	height: 40px;
+	width: 40px;
+	font-size: 22px;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer .CR {
+	width: 100%;
+	text-align: center;
+	padding: 25px 15px;
+	font-size: 14px;
+	border-top: 1px solid white;
+	margin: 80px 0 0;
+}
